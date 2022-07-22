@@ -11,11 +11,8 @@ import loginIcon from "public/Home/Navbar/login-icon.svg"
 import selloCompetenciaLogo from "public/Home/Navbar/sello-competencia-logo.png"
 
 const NavLinks = styled(Col)`
-  justify-content: end;
   align-items: center;
   gap: 2rem;
-
-  padding-inline: 2rem;
 
   a {
     font-family: "Poppins", sans-serif;
@@ -33,12 +30,14 @@ const NavLinks = styled(Col)`
   }
 `
 
-const ContactLink = styled.a`
+const InvertedLink = styled.a`
   border-radius: var(--border-radius);
   background-color: var(--accent-light);
   --text-color: #fff;
+  /* white-space: nowrap; */
+  text-align: center;
 
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1.65rem;
 
   &:hover {
     background-color: var(--accent-dark);
@@ -69,14 +68,14 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
           />
         </Col>
         <Col
-          className="d-flex justify-content-center justify-content-xl-start"
-          xl={5}
+          className="d-flex justify-content-center justify-content-xl-start align-items-xl-center"
+          xl={4}
           xs={8}
         >
           <div
             css={`
               width: min(470px, 100%);
-              height: auto;
+              height: min-content;
             `}
           >
             <a href="#root">
@@ -84,8 +83,8 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
                 alt="Sello Competencia"
                 layout="responsive"
                 sizes={`(min-width: 812px) calc((100vw - ${sidePadding} * 2) * (2 / 3)),
-                (min-width: 1200px) calc((100vw - ${sidePadding} * 2) * (5 / 12)),
-                (min-width: 1315px) 470w`}
+                (min-width: 1200px) calc((100vw - ${sidePadding} * 2) * (1 / 3)),
+                (min-width: 1650px) 470w`}
                 src={selloCompetenciaLogo}
               />
             </a>
@@ -104,11 +103,15 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
             <Image alt="Ícono" layout="fixed" src={loginIcon} />
           </div>
         </Col>
-        <NavLinks className="d-none d-xl-flex" xl={7}>
+        <NavLinks
+          className="d-none d-xl-flex justify-content-xl-end justify-content-xxl-between ps-xxl-5"
+          xl={8}
+        >
           <a href="#root">Inicio</a>
           <a href="#services">Servicios</a>
           <a href="#company">Nosotros</a>
-          <ContactLink href="#contact-form">Contacto</ContactLink>
+          <InvertedLink href="#contact-form">Contacto</InvertedLink>
+          <InvertedLink href="#">Log In</InvertedLink>
         </NavLinks>
       </Row>
     </Pad>
