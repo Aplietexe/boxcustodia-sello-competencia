@@ -1,20 +1,13 @@
 import Image from "next/image"
 import { useContext } from "react"
 import { Col, Row } from "react-bootstrap"
-import styled from "styled-components"
 
+import { ColoredP } from "components"
 import AccentButton from "components/AccentButton"
 import StyledH2 from "components/StyledH2"
 import { SidePadding } from "lib/context/Home"
 import { useBreakpoints } from "lib/hooks"
 import image from "public/Home/Header/image.webp"
-
-const Paragraph = styled.p`
-  font-family: "Raleway", sans-serif;
-  font-size: 1.563rem;
-  font-weight: 400;
-  color: var(--gray-dark);
-`
 
 const Header = () => {
   const sidePadding = useContext(SidePadding)
@@ -30,13 +23,13 @@ const Header = () => {
         }
       `}
     >
-      <Col xl={{ order: 2, span: 6 }} xs={12}>
+      <Col xl={{ order: 2, span: 6 }} xs={12} xxl={{ order: 2, span: 7 }}>
         <Image
           alt="Imagen del encabezado"
           layout="responsive"
           priority
-          sizes={`(max-width:1199px) calc(100vw - ${sidePadding} * 2 - 1.5rem),
-                calc(50vw - ${sidePadding} - 0.75rem)`}
+          sizes={`(min-width:1200px) calc((100vw - ${sidePadding} * 2) * (7 / 12) - 1.5rem),
+                  calc(100vw - ${sidePadding} * 2 - 1.5rem)`}
           src={image}
         />
       </Col>
@@ -51,24 +44,22 @@ const Header = () => {
         `}
         xl={{ order: 1, span: 6 }}
         xs={12}
+        xxl={{ order: 1, span: 5 }}
       >
         <Row>
           <Col xs={12}>
-            <StyledH2 className="pb-3">
-              Modernizar tu negocio puede ser fácil
-            </StyledH2>
+            <StyledH2 className="pb-3">Sello de Competencia</StyledH2>
           </Col>
           <Col className="mb-4" xs={12}>
-            <Paragraph>
-              A través de esta herramienta podrás aumentar la productividad de
-              tu negocio eliminando la gestión manual de documentos, tareas o
-              información que va pasando de persona a persona.
-            </Paragraph>
+            <ColoredP>
+              Es un sello que acompaña a la firma digital de una persona física
+              y a su vez estampa la matrícula profesional con la información del
+              Colegio/ Consejo/ Entidad/ Persona Jurídica en el cual está
+              matriculado.
+            </ColoredP>
           </Col>
           <Col xs={6}>
-            <AccentButton href="#contact-form">
-              Solicitar cotización
-            </AccentButton>
+            <AccentButton href="#contact-form">Consultar servicio</AccentButton>
           </Col>
         </Row>
       </Col>
