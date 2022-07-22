@@ -13,7 +13,7 @@ const StyledForm = styled(Form)`
 
   input,
   textarea {
-    border-radius: calc(var(--border-radius) * 0.7);
+    border-radius: var(--border-radius);
   }
 
   input {

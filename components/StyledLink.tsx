@@ -4,7 +4,7 @@ const StyledLink = styled.a`
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--accent-light);
+  color: #4a50fd;
 
   text-decoration: none;
   cursor: pointer;
