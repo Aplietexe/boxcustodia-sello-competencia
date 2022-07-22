@@ -22,7 +22,7 @@ const StyledCol = styled(Col)`
 const Footer = () => (
   <BackgroundColor className="mt-5" color="var(--accent-dark)">
     <StyledCol className="p-3">
-      <p>Copyright &copy; 2021 Workflow.</p>
+      <p>Copyright &copy; 2021 Sello Competencia.</p>
       <p>Desarrollado por Box Custodia de Archivos S.A.</p>
     </StyledCol>
   </BackgroundColor>
