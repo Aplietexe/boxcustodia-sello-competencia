@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.599" height="18.08" viewBox="0 0 22.599 18.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2e4765;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-mail-outline" data-name="Icon material-mail-outline" class="cls-1" d="M23.339,6H5.26A2.257,2.257,0,0,0,3.011,8.26L3,21.819a2.267,2.267,0,0,0,2.26,2.26H23.339a2.267,2.267,0,0,0,2.26-2.26V8.26A2.267,2.267,0,0,0,23.339,6Zm0,15.819H5.26V10.52l9.04,5.65,9.04-5.65ZM14.3,13.91,5.26,8.26H23.339Z" transform="translate(-3 -6)"/>
+</svg>
