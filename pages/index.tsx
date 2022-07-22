@@ -8,6 +8,7 @@ import {
   ContactForm,
   Footer,
   Header,
+  Homologation,
   Navbar,
   Sidebar,
 } from "components/Home"
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
         <Container fluid>
           <Navbar setIsSidebarOpen={setIsSidebarOpen} />
           <Header />
+          <Homologation />
           <Company />
           <ContactForm />
           <Footer />
