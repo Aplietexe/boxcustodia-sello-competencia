@@ -8,7 +8,7 @@ import { SidePadding } from "lib/context/Home"
 import type { SetState } from "lib/types"
 import burgerIcon from "public/Home/Navbar/burger-icon.svg"
 import loginIcon from "public/Home/Navbar/login-icon.svg"
-import workflowLogo from "public/Home/Navbar/workflow-logo.svg"
+import selloCompetenciaLogo from "public/Home/Navbar/sello-competencia-logo.png"
 
 const NavLinks = styled(Col)`
   justify-content: end;
@@ -75,17 +75,18 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
         >
           <div
             css={`
-              width: min(342px, 100%);
+              width: min(470px, 100%);
               height: auto;
             `}
           >
             <a href="#root">
               <Image
-                alt="Workflow"
+                alt="Sello Competencia"
                 layout="responsive"
-                sizes={`(max-width: 593px) calc((100vw - ${sidePadding} * 2) * (2 / 3)),
-                342w`}
-                src={workflowLogo}
+                sizes={`(min-width: 812px) calc((100vw - ${sidePadding} * 2) * (2 / 3)),
+                (min-width: 1200px) calc((100vw - ${sidePadding} * 2) * (5 / 12)),
+                (min-width: 1315px) 470w`}
+                src={selloCompetenciaLogo}
               />
             </a>
           </div>
