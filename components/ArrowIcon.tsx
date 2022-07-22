@@ -16,11 +16,11 @@ const ArrowIcon = ({ word }: ArrowIconProps) => (
     <div
       css={`
         display: inline-block;
-        margin-left: 0.25rem;
+        margin-left: 1rem;
 
         span {
           vertical-align: middle;
-          top: -3px;
+          top: -2px;
         }
       `}
     >
