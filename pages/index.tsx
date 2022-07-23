@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Container } from "react-bootstrap"
 
 import {
+  Authorities,
   Company,
   ContactForm,
   Footer,
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
           <Navbar setIsSidebarOpen={setIsSidebarOpen} />
           <Header />
           <Homologation />
+          <Authorities />
           <Company />
           <ContactForm />
           <Footer />

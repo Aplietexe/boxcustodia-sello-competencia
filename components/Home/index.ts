@@ -1,3 +1,4 @@
+export { default as Authorities } from "./Authorities"
 export { default as Company } from "./Company"
 export { default as ContactForm } from "./ContactForm"
 export { default as Footer } from "./Footer"
