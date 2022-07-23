@@ -47,14 +47,7 @@ const Homologation = () => {
           {breakpoints.xl && link}
         </Col>
         <Col xl={7} xs={12}>
-          <ColoredP
-            className="ps-xl-4"
-            css={`
-              strong {
-                font-weight: 700;
-              }
-            `}
-          >
+          <ColoredP className="ps-xl-4">
             Box Custodia de Archivos S.A,{" "}
             <strong>Certificador Licenciado</strong>, tiene en su política 4.1
             aprobada la generación de certificados de Sello de Atributos y/o
