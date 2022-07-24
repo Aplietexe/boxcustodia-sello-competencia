@@ -2,9 +2,7 @@ import Image from "next/image"
 import { useContext } from "react"
 import styled from "styled-components"
 
-import ArrowIcon from "components/ArrowIcon"
-import Pad from "components/Pad"
-import StyledLink from "components/StyledLink"
+import { ArrowIcon, Pad, StyledLink } from "components"
 import { SidePadding } from "lib/context/Home"
 import boxLogo from "public/Home/Company/box-logo.svg"
 

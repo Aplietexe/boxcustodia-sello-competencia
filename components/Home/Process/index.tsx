@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
-import Pad from "components/Pad"
-import StyledH2 from "components/StyledH2"
+import { Pad, StyledH2 } from "components"
 import { xl } from "lib/cssHelpers"
 
 import Step from "./Step"

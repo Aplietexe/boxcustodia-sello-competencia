@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap"
 import styled from "styled-components"
 
-import BackgroundColor from "components/BackgroundColor"
+import { BackgroundColor } from "components"
 
 const StyledCol = styled(Col)`
   font-family: "Open Sans", sans-serif;

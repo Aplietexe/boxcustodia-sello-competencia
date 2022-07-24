@@ -3,7 +3,7 @@ import { useCallback, useContext } from "react"
 import { Col, Row } from "react-bootstrap"
 import styled from "styled-components"
 
-import Pad from "components/Pad"
+import { Pad } from "components"
 import { SidePadding } from "lib/context/Home"
 import type { SetState } from "lib/types"
 import burgerIcon from "public/Home/Navbar/burger-icon.svg"

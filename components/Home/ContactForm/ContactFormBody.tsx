@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Col, FloatingLabel, Form, Row } from "react-bootstrap"
 import styled from "styled-components"
 
-import AccentButton from "components/AccentButton"
+import { AccentButton } from "components"
 import sendIcon from "public/Home/ContactForm/send.svg"
 
 const StyledForm = styled(Form)`

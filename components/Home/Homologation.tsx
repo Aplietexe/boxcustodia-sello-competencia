@@ -1,8 +1,6 @@
 import { Col, Row } from "react-bootstrap"
 
-import { ColoredP, Pad } from "components"
-import ArrowIcon from "components/ArrowIcon"
-import StyledLink from "components/StyledLink"
+import { ArrowIcon, ColoredP, Pad, StyledLink } from "components"
 import { useBreakpoints } from "lib/hooks"
 
 const Homologation = () => {
