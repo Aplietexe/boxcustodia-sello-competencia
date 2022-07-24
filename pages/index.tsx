@@ -11,6 +11,7 @@ import {
   Header,
   Homologation,
   Navbar,
+  Process,
   Sidebar,
 } from "components/Home"
 import { SidePadding } from "lib/context/Home"
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
           <Header />
           <Homologation />
           <Authorities />
+          <Process />
           <Company />
           <ContactForm />
           <Footer />
