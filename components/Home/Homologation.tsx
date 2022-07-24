@@ -18,10 +18,8 @@ const Homologation = () => {
         <Col className="mb-5" xl={5} xs={12}>
           <div
             css={`
-              font-family: "Poppins", sans-serif;
               font-size: 3.375rem;
               font-weight: 400;
-              color: var(--accent-dark);
               line-height: 1;
 
               & > div {

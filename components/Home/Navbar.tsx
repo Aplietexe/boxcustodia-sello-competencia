@@ -15,7 +15,6 @@ const NavLinks = styled(Col)`
   gap: 2rem;
 
   a {
-    font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--text-color, var(--accent-dark));

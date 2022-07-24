@@ -11,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
     --border-radius: 13px;
   }
 
+  body {
+    font-family: "Poppins", sans-serif;
+    color: var(--accent-dark);
+  }
+
   h1, h2, h3, h4, h5, h6, p {
     margin: 0
   }

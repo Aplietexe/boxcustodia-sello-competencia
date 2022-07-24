@@ -7,10 +7,8 @@ import { SidePadding } from "lib/context/Home"
 import boxLogo from "public/Home/Company/box-logo.svg"
 
 const Paragraph = styled.p`
-  font-family: "Poppins", sans-serif;
   font-size: 1.75rem;
   font-weight: 300;
-  color: var(--accent-dark);
 
   text-align: center;
   width: min(100%, 850px);

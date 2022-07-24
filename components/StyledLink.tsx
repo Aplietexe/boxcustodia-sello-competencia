@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const StyledLink = styled.a`
-  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   color: #4a50fd;
