@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 
+import breakpointSizes from "lib/breakpointSizes"
+
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 const defaultBreakpoints = {
@@ -10,14 +12,6 @@ const defaultBreakpoints = {
   sm: false,
 }
 /* eslint-enable @typescript-eslint/naming-convention */
-
-const breakpointSizes = {
-  xxl: 1400,
-  xl: 1200,
-  lg: 992,
-  md: 768,
-  sm: 576,
-}
 /* eslint-enable sort-keys-fix/sort-keys-fix */
 
 const getCurrentBreakpoints = () => {
@@ -55,7 +49,5 @@ const useBreakpoints = () => {
 
   return breakpoints
 }
-
-useBreakpoints.breakpointSizes = breakpointSizes
 
 export default useBreakpoints

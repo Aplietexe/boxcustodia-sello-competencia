@@ -5,14 +5,12 @@ import { Col, Row } from "react-bootstrap"
 import { ColoredP } from "components"
 import AccentButton from "components/AccentButton"
 import StyledH2 from "components/StyledH2"
+import breakpointSizes from "lib/breakpointSizes"
 import { SidePadding } from "lib/context/Home"
-import { useBreakpoints } from "lib/hooks"
 import image from "public/Home/Header/image.webp"
 
 const Header = () => {
   const sidePadding = useContext(SidePadding)
-
-  const { breakpointSizes } = useBreakpoints
 
   return (
     <Row
