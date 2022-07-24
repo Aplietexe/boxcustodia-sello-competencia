@@ -5,8 +5,8 @@ import { Col, Row } from "react-bootstrap"
 import { ColoredP } from "components"
 import AccentButton from "components/AccentButton"
 import StyledH2 from "components/StyledH2"
-import breakpointSizes from "lib/breakpointSizes"
 import { SidePadding } from "lib/context/Home"
+import { lg } from "lib/cssHelpers"
 import image from "public/Home/Header/image.webp"
 
 const Header = () => {
@@ -16,9 +16,9 @@ const Header = () => {
     <Row
       className="my-4 pt-xl-4"
       css={`
-        @media (min-width: ${breakpointSizes.lg}px) {
+        ${lg/* css */ `
           padding-inline: ${sidePadding};
-        }
+        `}
       `}
     >
       <Col xl={{ order: 2, span: 6 }} xs={12} xxl={{ order: 2, span: 7 }}>
@@ -36,9 +36,9 @@ const Header = () => {
         css={`
           padding-inline: ${sidePadding};
 
-          @media (min-width: ${breakpointSizes.lg}px) {
+          ${lg`
             padding-inline: 0;
-          }
+          `}
         `}
         xl={{ order: 1, span: 6 }}
         xs={12}

@@ -7,6 +7,7 @@ const generalRules = {
   "import/no-unused-modules": "off",
   "import/prefer-default-export": "off",
   "max-statements": "off",
+  "no-inline-comments": ["error", { ignorePattern: "css" }],
   "no-underscore-dangle": "off",
   "prettier/prettier": "error",
   "putout/putout": "off",
@@ -37,7 +38,6 @@ const typescriptRules = {
   ],
 
   "@typescript-eslint/explicit-member-accessibility": "off",
-
   "@typescript-eslint/init-declarations": "off",
 
   "@typescript-eslint/naming-convention": [
@@ -88,6 +88,8 @@ const typescriptRules = {
     "error",
     { ignoreStringArrays: true },
   ],
+
+  "@typescript-eslint/restrict-template-expressions": "off",
 
   "@typescript-eslint/strict-boolean-expressions": [
     "error",
