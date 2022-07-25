@@ -27,7 +27,8 @@ const createBreakpointHelper = (breakpoint: number) => {
   return breakpointHelper
 }
 
+const md = createBreakpointHelper(breakpointSizes.md)
 const lg = createBreakpointHelper(breakpointSizes.lg)
 const xl = createBreakpointHelper(breakpointSizes.xl)
 
-export { lg, xl }
+export { md, lg, xl }
