@@ -2,7 +2,7 @@ import Image from "next/image"
 import { useContext } from "react"
 import { Col, Row } from "react-bootstrap"
 
-import { BackgroundImage, Pad, StyledH2, StyledP } from "components"
+import { BackgroundImage, MutedP, Pad, StyledH2 } from "components"
 import { SidePadding } from "lib/context/Home"
 import backgroundImage from "public/Home/ContactForm/background.webp"
 import header from "public/Home/ContactForm/header.webp"
@@ -33,7 +33,7 @@ const ContactFormHeader = () => {
           </Col>
           <Col className="text-center py-4" xs={12}>
             <StyledH2 className="mb-4">¿Cómo podemos ayudarlo?</StyledH2>
-            <StyledP>Llene el formulario</StyledP>
+            <MutedP>Llene el formulario</MutedP>
           </Col>
         </Pad>
       </Col>

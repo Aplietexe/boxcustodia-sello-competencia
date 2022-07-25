@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Col, Row } from "react-bootstrap"
 import styled from "styled-components"
 
-import { ArrowIcon, StyledLink, StyledP } from "components"
+import { ArrowIcon, MutedP, StyledLink } from "components"
 
 import contactOptions from "./contactOptions"
 
@@ -23,7 +23,7 @@ const ContactInfo = () => (
         {contactOptions.map(({ alt, image, text }) => (
           <OptionStyles className="mb-3" key={text}>
             <Image alt={alt} layout="fixed" src={image} />
-            <StyledP className="m-0">{text}</StyledP>
+            <MutedP className="m-0">{text}</MutedP>
           </OptionStyles>
         ))}
         <StyledLink className="mt-3" href="#contact-form-body">
