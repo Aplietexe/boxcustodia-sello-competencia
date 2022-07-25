@@ -7,7 +7,7 @@ const Homologation = () => {
   const breakpoints = useBreakpoints()
 
   const link = (
-    <StyledLink className="mt-5">
+    <StyledLink className="mt-5" href="#">
       Ver <ArrowIcon word="homologación" />
     </StyledLink>
   )
