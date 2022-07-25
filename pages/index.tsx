@@ -11,6 +11,7 @@ import {
   Header,
   Homologation,
   Navbar,
+  Perks,
   Process,
   Sidebar,
 } from "components/Home"
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
           <Homologation />
           <Authorities />
           <Process />
+          <Perks />
           <Company />
           <ContactForm />
           <Footer />
