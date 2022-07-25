@@ -8,7 +8,7 @@ import sendIcon from "public/Home/ContactForm/send.svg"
 const StyledForm = styled(Form)`
   font-size: 1.125rem;
   font-weight: 300;
-  color: var(--gray-dark);
+  color: var(--gray);
 
   input,
   textarea {

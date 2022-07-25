@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Styles = styled.div`
   .inverted {
-    background-color: var(--gray-light);
+    background-color: #fff;
     --text-color: var(--accent-dark);
   }
 
@@ -11,7 +11,7 @@ const Styles = styled.div`
   }
 
   .bm-cross {
-    background-color: var(--gray-light);
+    background-color: #fff;
   }
 
   .bm-cross-button {
@@ -47,7 +47,7 @@ const Styles = styled.div`
     display: inline-block;
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--text-color, var(--gray-light));
+    color: var(--text-color, #fff);
 
     text-decoration: none;
     margin-block: 0.75rem;

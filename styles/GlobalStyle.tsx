@@ -4,9 +4,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --accent-light: #253585;
     --accent-dark: #2e4765;
-
-    --gray-dark: #6c757d;
-    --gray-light: #f4f6fa;
+    --gray: #6c757d;
 
     --border-radius: 13px;
   }
