@@ -4,7 +4,7 @@
       <circle cx="65" cy="65" r="65" stroke="none"/>
       <circle cx="65" cy="65" r="64.5" fill="none"/>
     </g>
-    <text id="_03" data-name="03" transform="translate(99.732 2839.938)" fill="#2e4765" font-size="58" font-family="Poppins-Regular, Poppins"><tspan x="-35.293" y="0">03</tspan></text>
+    <text id="_03" data-name="03" transform="translate(99.732 2839.938)" fill="#2e4765" font-size="58" font-family="Poppins-Regular, Poppins, sans-serif"><tspan x="-35.293" y="0">03</tspan></text>
     <ellipse id="Elipse_130" data-name="Elipse 130" cx="10.672" cy="10.672" rx="10.672" ry="10.672" transform="translate(149.655 2781.85)" fill="#4a50fd"/>
   </g>
 </svg>
