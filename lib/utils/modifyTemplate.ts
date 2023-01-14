@@ -1,21 +1,16 @@
-interface Copy extends Array<string> {
-  raw?: string[]
-}
-
 const modifyTemplate = (
   strings: TemplateStringsArray,
   { append = "", prepend = "" },
-) => {
-  const copy: Copy = Array.from(strings)
-  copy.raw = Array.from(strings.raw)
+): TemplateStringsArray => {
+  const main = Array.from(strings)
+  main[0] = prepend + main[0]
+  main[main.length - 1] += append
 
-  copy[0] = prepend + copy[0]
-  copy[copy.length - 1] += append
+  const raw = Array.from(strings.raw)
+  raw[0] = prepend + raw[0]
+  raw[raw.length - 1] += append
 
-  copy.raw[0] = prepend + copy.raw[0]
-  copy.raw[copy.raw.length - 1] += append
-
-  return copy as TemplateStringsArray
+  return Object.assign(main, { raw })
 }
 
 export default modifyTemplate

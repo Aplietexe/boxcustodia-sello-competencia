@@ -14,7 +14,8 @@ const NavLinks = styled(Col)`
   align-items: center;
   gap: 2rem;
 
-  a {
+  a,
+  button {
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--text-color, var(--accent-dark));
@@ -110,7 +111,7 @@ const Navbar = ({ setIsSidebarOpen }: NavbarProps) => {
           <a href="#services">Servicios</a>
           <a href="#company">Nosotros</a>
           <InvertedLink href="#contact-form">Contacto</InvertedLink>
-          <InvertedLink href="#">Log In</InvertedLink>
+          <InvertedLink as="button">Log In</InvertedLink>
         </NavLinks>
       </Row>
     </Pad>
